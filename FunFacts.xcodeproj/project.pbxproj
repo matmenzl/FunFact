@@ -13,6 +13,8 @@
 		BB2A66D61A4234CE00DFCEA6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2A66D51A4234CE00DFCEA6 /* Images.xcassets */; };
 		BB2A66D91A4234CE00DFCEA6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2A66D71A4234CE00DFCEA6 /* LaunchScreen.xib */; };
 		BB2A66E51A4234CF00DFCEA6 /* FunFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A66E41A4234CF00DFCEA6 /* FunFactsTests.swift */; };
+		BB2A66F11A4432CE00DFCEA6 /* factBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A66F01A4432CD00DFCEA6 /* factBook.swift */; };
+		BB2A66F31A447B0000DFCEA6 /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A66F21A447B0000DFCEA6 /* ColorWheel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,9 @@
 		BB2A66DE1A4234CF00DFCEA6 /* FunFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2A66E31A4234CF00DFCEA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB2A66E41A4234CF00DFCEA6 /* FunFactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsTests.swift; sourceTree = "<group>"; };
+		BB2A66EE1A4235ED00DFCEA6 /* scratchPad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = scratchPad.playground; path = FunFacts/scratchPad.playground; sourceTree = "<group>"; };
+		BB2A66F01A4432CD00DFCEA6 /* factBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = factBook.swift; sourceTree = "<group>"; };
+		BB2A66F21A447B0000DFCEA6 /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				BB2A66CB1A4234CE00DFCEA6 /* FunFacts */,
+				BB2A66EF1A4235FD00DFCEA6 /* Playgrounds */,
 				BB2A66E11A4234CF00DFCEA6 /* FunFactsTests */,
 				BB2A66CA1A4234CE00DFCEA6 /* Products */,
 			);
@@ -78,11 +84,13 @@
 			isa = PBXGroup;
 			children = (
 				BB2A66CE1A4234CE00DFCEA6 /* AppDelegate.swift */,
+				BB2A66F01A4432CD00DFCEA6 /* factBook.swift */,
 				BB2A66D01A4234CE00DFCEA6 /* ViewController.swift */,
 				BB2A66D21A4234CE00DFCEA6 /* Main.storyboard */,
 				BB2A66D51A4234CE00DFCEA6 /* Images.xcassets */,
 				BB2A66D71A4234CE00DFCEA6 /* LaunchScreen.xib */,
 				BB2A66CC1A4234CE00DFCEA6 /* Supporting Files */,
+				BB2A66F21A447B0000DFCEA6 /* ColorWheel.swift */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -110,6 +118,14 @@
 				BB2A66E31A4234CF00DFCEA6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB2A66EF1A4235FD00DFCEA6 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				BB2A66EE1A4235ED00DFCEA6 /* scratchPad.playground */,
+			);
+			name = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +177,7 @@
 				TargetAttributes = {
 					BB2A66C81A4234CE00DFCEA6 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = K6ZPGPRJE7;
 					};
 					BB2A66DD1A4234CF00DFCEA6 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -214,6 +231,8 @@
 			files = (
 				BB2A66D11A4234CE00DFCEA6 /* ViewController.swift in Sources */,
 				BB2A66CF1A4234CE00DFCEA6 /* AppDelegate.swift in Sources */,
+				BB2A66F11A4432CE00DFCEA6 /* factBook.swift in Sources */,
+				BB2A66F31A447B0000DFCEA6 /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
